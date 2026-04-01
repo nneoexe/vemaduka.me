@@ -1,0 +1,179 @@
+.bg-image{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border:#f7f7f7;
+    border-width: 10px;
+    height: auto;
+    display: block;
+}
+
+.container{
+    margin-top: 40px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    size: 30px;
+    transition: color 0.5s ease;
+}
+
+.navbar-brand{
+    font-family: "Black Han Sans";
+}
+
+.da-linkedin svg {
+    transition: transform 0.3s ease; 
+}
+
+.da-linkedin svg:hover {
+    transform: scale(1.2); 
+}
+.da-github svg {
+    transition: transform 0.3s ease; 
+}
+
+.da-github svg:hover {
+    transform: scale(1.2); 
+}
+
+.navbar-buttons {
+    color:#f7f7f7;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin-right: 50px;
+}
+
+.navbar-buttons .nav-link:hover {
+    color: #ff0000 !important; 
+}
+
+.projects-item {
+    background-color: rgb(63, 66, 65);
+    color: #f7f7f7;
+    border: 2px solid rgb(84, 87, 86);
+    border-radius: 5px 5px; 
+    font-size: 17px;
+    font-family: 'Black Han Sans';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS";  
+}
+
+.profile-pic {
+    margin-bottom: 50%;
+    margin-right: 5%;
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: left;
+    border: 6px solid #433ca6;
+    transition: border-color 0.5s ease;
+}
+
+.profile-pic:hover {
+    border-color:#f7f7f7;
+    border-width: 11px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.bio-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.bio-name {
+    margin-top: 5%;
+    color: #f7f7f7;
+    font-family: 'Black Han Sans', sans-serif;
+    text-align: center;
+    font-size: 2.3em;
+    white-space: nowrap; 
+}
+
+@media only screen and (max-width: 600px) {
+    .profile-pic {
+        width: 150px; 
+        height: 150px; 
+    }
+
+    .bio-name {
+        font-size: 1.5em; 
+    }
+
+    .bio-goals {
+        font-size: 1.2em; 
+    }
+}
+
+/* For devices smaller than 900px */
+@media only screen and (max-width: 900px) {
+    .profile-pic {
+        width: 200px; 
+        height: 200px; 
+    }
+
+    .bio-name {
+        font-size: 1.8em; 
+    }
+
+    .bio-goals {
+        font-size: 1.5em; 
+    }
+}
+
+.highlight-name {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #433ca6 50%);
+    background-position: 50% 50%;
+    padding-top: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bio-goals {
+    color: #f7f7f7;
+    font-family: 'Black Han Sans', sans-serif;
+    text-align: center;
+    margin-left: 23%; 
+    margin-right: 23%;
+    font-size: 1.7em;
+}
+
+.position-center {
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    top: 20%
+}
+
+
+
+
+/* default black is #001c00 and white is #f7f7f7 */ 
+
+
+
+
