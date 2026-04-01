@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venessa Maduka</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#" class="logo">vm<span class="accent">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#leadership">leadership</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">hi, i'm</p>
+      <h1 class="hero-name">Venessa Maduka<span class="accent">.</span></h1>
+      <p class="hero-tagline">i like making things — sometimes with code, sometimes not. still figuring it out.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">see my work</a>
+        <a href="#contact" class="btn btn-outline">get in touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <h2 class="section-title">about<span class="accent">.</span></h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm Venessa — I study computer engineering at Boston University and I've
+          been coding since high school. I like working on things that actually matter
+          to people, whether that's an app, a team, or just a really good idea.
+        </p>
+        <p>
+          I don't have it all figured out yet (who does?) but I know I like building,
+          learning, and being around people who care about what they do.
+          This site is just a place to keep track of it all.
+        </p>
+      </div>
+      <div class="about-details">
+        <div class="detail-card">
+          <h3>education</h3>
+          <p>B.S. Computer Engineering, Boston University (2022–2026)</p>
+        </div>
+        <div class="detail-card">
+          <h3>interests</h3>
+          <p>Tech, creativity, problem-solving</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <h2 class="section-title">projects<span class="accent">.</span></h2>
+
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">all</button>
+      <button class="filter-btn" data-filter="coursework">coursework</button>
+      <button class="filter-btn" data-filter="fellowship">fellowship</button>
+      <button class="filter-btn" data-filter="high school">high school</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Stylus -->
+      <article class="project-card" data-tags="coursework">
+        <div class="project-header">
+          <span class="project-tag">coursework</span>
+          <div class="project-links">
+            <a href="https://github.com/siddvrth/CS411-Stylus.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-link">↗</a>
+          </div>
+        </div>
+        <h3 class="project-name">Stylus</h3>
+        <p class="project-desc">Predicts how likely you are to return clothes before you buy them. You set up a style profile, snap photos of items, and it tells you if you'll actually keep it. CS 411 project.</p>
+        <ul class="project-tech">
+          <li>TypeScript</li>
+          <li>Vite</li>
+          <li>Tailwind</li>
+          <li>Node.js</li>
+        </ul>
+      </article>
+
+      <!-- SportMate -->
+      <article class="project-card" data-tags="coursework">
+        <div class="project-header">
+          <span class="project-tag">coursework</span>
+          <div class="project-links">
+            <a href="https://github.com/EthanL3/EC463_Team_22_Golf_Swing.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-link">↗</a>
+          </div>
+        </div>
+        <h3 class="project-name">SportMate</h3>
+        <p class="project-desc">Senior capstone — an app that analyzes your golf swing with computer vision and tells you what to fix.</p>
+        <ul class="project-tech">
+          <li>Python</li>
+          <li>Computer Vision</li>
+        </ul>
+      </article>
+
+      <!-- PintOS -->
+      <article class="project-card" data-tags="coursework">
+        <div class="project-header">
+          <span class="project-tag">coursework</span>
+          <div class="project-links">
+            <a href="https://github.com/BU-EC440/pintos-lab-lav.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-link">↗</a>
+          </div>
+        </div>
+        <h3 class="project-name">PintOS Labs</h3>
+        <p class="project-desc">Got deep into OS internals — threads, user programs, virtual memory, file systems. All built on PintOS in C.</p>
+        <ul class="project-tech">
+          <li>C</li>
+          <li>x86</li>
+          <li>OS Internals</li>
+        </ul>
+      </article>
+
+      <!-- EK301 Truss -->
+      <article class="project-card" data-tags="coursework">
+        <div class="project-header">
+          <span class="project-tag">coursework</span>
+          <div class="project-links">
+            <a href="https://github.com/nneoexe/ek301_truss_project.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-link">↗</a>
+          </div>
+        </div>
+        <h3 class="project-name">Truss Design Optimizer</h3>
+        <p class="project-desc">MATLAB tool that figures out the forces in a truss, optimizes the cost-to-strength ratio, and checks for buckling. We tested our designs with real physical builds.</p>
+        <ul class="project-tech">
+          <li>MATLAB</li>
+          <li>Linear Algebra</li>
+        </ul>
+      </article>
+
+      <!-- DevOrbit -->
+      <article class="project-card" data-tags="fellowship">
+        <div class="project-header">
+          <span class="project-tag">fellowship</span>
+          <div class="project-links">
+            <a href="https://github.com/wjxiao2020/DevOrbit.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-link">↗</a>
+          </div>
+        </div>
+        <h3 class="project-name">DevOrbit</h3>
+        <p class="project-desc">Platform where you make your own chatbots — give them names, personalities, roles — and just talk to them. Built during Headstarter AI Fellowship.</p>
+        <ul class="project-tech">
+          <li>Next.js</li>
+          <li>Firebase</li>
+          <li>JavaScript</li>
+        </ul>
+      </article>
+
+      <!-- CardFlip -->
+      <article class="project-card" data-tags="fellowship">
+        <div class="project-header">
+          <span class="project-tag">fellowship</span>
+          <div class="project-links">
+            <a href="https://github.com/wjxiao2020/CardFlip.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-link">↗</a>
+          </div>
+        </div>
+        <h3 class="project-name">CardFlip</h3>
+        <p class="project-desc">Type in any topic and it generates flashcards for you using an LLM. Has free and paid tiers. Headstarter AI Fellowship.</p>
+        <ul class="project-tech">
+          <li>Next.js</li>
+          <li>Firebase</li>
+          <li>Stripe</li>
+        </ul>
+      </article>
+
+      <!-- Flow -->
+      <article class="project-card" data-tags="fellowship">
+        <div class="project-header">
+          <span class="project-tag">fellowship</span>
+          <div class="project-links">
+            <a href="https://github.com/wjxiao2020/Flow.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-link">↗</a>
+          </div>
+        </div>
+        <h3 class="project-name">Flow</h3>
+        <p class="project-desc">Content recommendation app from the Headstarter TikTok Hackathon. Go backend, tag-based discovery, the whole full-stack thing.</p>
+        <ul class="project-tech">
+          <li>Next.js</li>
+          <li>Go</li>
+          <li>Redis</li>
+          <li>SQL</li>
+        </ul>
+      </article>
+
+      <!-- Team Edge -->
+      <article class="project-card" data-tags="high school">
+        <div class="project-header">
+          <span class="project-tag">high school</span>
+          <div class="project-links">
+            <a href="https://github.com/nneoexe/teamedge-flask-projects.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-link">↗</a>
+          </div>
+        </div>
+        <h3 class="project-name">Team Edge Flask Projects</h3>
+        <p class="project-desc">A bunch of little web apps from high school. Nothing fancy, but this is where I first learned to code.</p>
+        <ul class="project-tech">
+          <li>Python</li>
+          <li>Flask</li>
+          <li>HTML/CSS</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section" id="experience">
+    <h2 class="section-title">experience<span class="accent">.</span></h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Software Engineer</h3>
+            <span class="timeline-date">Dec 2024 — Present</span>
+          </div>
+          <p class="timeline-company">Communiti</p>
+          <p class="timeline-desc">Built a campus engagement app in React Native with Node.js and Supabase — clubs, events, search, notifications, the works. Demoed to 100+ BU students and made semi-finals at BU's 2025 New Venture Competition.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Platform Developer Intern</h3>
+            <span class="timeline-date">Jun 2022 — Aug 2022</span>
+          </div>
+          <p class="timeline-company">Sapphire Digital (now Zelis)</p>
+          <p class="timeline-desc">Worked on an Angular telehealth platform — sped up load times by about 10% and shipped 5 UX improvements with TypeScript. First real taste of working on a team with standups and sprints.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership -->
+  <section class="section" id="leadership">
+    <h2 class="section-title">leadership<span class="accent">.</span></h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Secretary, Mars Rover Team</h3>
+            <span class="timeline-date">Sep 2022 — May 2024</span>
+          </div>
+          <p class="timeline-company">Boston University</p>
+          <p class="timeline-desc">Recruited 50+ students, got ASML on board as a sponsor, ran 3 fundraisers that brought in over $1000, and kept the club website running on Squarespace.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Code Next Fellow</h3>
+            <span class="timeline-date">Sep 2020 — May 2022</span>
+          </div>
+          <p class="timeline-company">Google</p>
+          <p class="timeline-desc">Built web apps with Flask, JS, and SQL on Raspberry Pis. Made IoT projects on SenseHAT and Microbit and showed them off to 50+ other fellows. This is where I caught the coding bug.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <h2 class="section-title">let's connect<span class="accent">.</span></h2>
+    <p class="contact-text">
+      Want to chat, work on something, or just say hey? I'm around.
+    </p>
+    <div class="contact-links">
+      <a href="mailto:nneomav04@gmail.com" class="btn btn-primary">email me</a>
+      <a href="https://github.com/nneoexe" target="_blank" rel="noopener noreferrer" class="btn btn-outline">github</a>
+      <a href="https://linkedin.com/in/vmaduka" target="_blank" rel="noopener noreferrer" class="btn btn-outline">linkedin</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>built by venessa maduka · 2026</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
