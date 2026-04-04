@@ -285,3 +285,18 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+// ========== Theme toggle ==========
+const themeToggle = document.querySelector(".theme-toggle");
+const storedTheme = localStorage.getItem("theme");
+
+if (storedTheme) {
+  document.documentElement.setAttribute("data-theme", storedTheme);
+}
+
+themeToggle.addEventListener("click", () => {
+  const current = document.documentElement.getAttribute("data-theme");
+  const next = current === "light" ? "dark" : "light";
+  document.documentElement.setAttribute("data-theme", next);
+  localStorage.setItem("theme", next);
+});
